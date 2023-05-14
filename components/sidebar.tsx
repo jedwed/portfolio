@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { useTheme } from 'next-themes';
 // import musicNoteIcon from '../public/music-note.svg';
 // import githubIcon from '../public/github.svg';
@@ -25,8 +24,8 @@ export default function Sidebar() {
         <h1 className="font-bold text-2xl">Edward Qian</h1>
       </div>
       <div className="flex flex-col">
-        {navItems.map(({ path, text }) => (
-          <Link href={path} className="flex items-center my-1">
+        {navItems.map(({ path, text }, index) => (
+          <Link key={index} href={path} className="flex items-center my-1">
             <MusicNoteIcon />
             {text}
           </Link>
