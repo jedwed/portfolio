@@ -6,7 +6,13 @@ import { useTheme } from 'next-themes';
 // import githubIcon from '../public/github.svg';
 // import linkedinIcon from '../public/linkedin.svg';
 
-import { GithubIcon, LinkedInIcon, MusicNoteIcon } from './icons';
+import {
+  GithubIcon,
+  LinkedInIcon,
+  MoonIcon,
+  MusicNoteIcon,
+  SunIcon,
+} from './icons';
 
 const navItems = [
   { path: '/', text: 'Home' },
@@ -18,10 +24,12 @@ const navItems = [
 export default function Sidebar() {
   const { theme, setTheme } = useTheme();
   return (
-    <div className="h-full w-[15%] flex flex-col items-center text-center py-3 justify-center">
+    <div className="h-full w-[15%] flex flex-col gap-5 items-center text-center py-3 justify-center">
       <div>
         {/* TODO: Logo */}
-        <h1 className="font-bold text-2xl">Edward Qian</h1>
+        <Link href="/">
+          <h1 className="font-bold text-2xl">Edward Qian</h1>
+        </Link>
       </div>
       <div className="flex flex-col">
         {navItems.map(({ path, text }, index) => (
@@ -40,7 +48,7 @@ export default function Sidebar() {
         </a>
       </div>
       <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-        Toggle mode
+        {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
       </button>
     </div>
   );
