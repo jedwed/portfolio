@@ -19,9 +19,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <div className="flex h-screen">
+          <div className="flex h-screen w-screen">
             <Sidebar />
-            <main>{children}</main>
+            <div className="w-full flex items-center justify-center">
+              <main className="m-12 text-center items-center max-w-xl">
+                {children}
+              </main>
+            </div>
           </div>
         </Providers>
       </body>
