@@ -13,12 +13,11 @@ import {
   MusicNoteIcon,
   SunIcon,
 } from './icons';
+// import Logo from './logo';
 
 const navItems = [
-  { path: '/', text: 'Home' },
-  { path: '/skills', text: 'Skills' },
   { path: '/projects', text: 'Projects' },
-  { path: '/resume', text: 'Resume' },
+  { path: '/blog', text: 'Blog' },
 ];
 
 export default function Sidebar() {
@@ -26,9 +25,9 @@ export default function Sidebar() {
   return (
     <div className="h-full w-[15%] flex flex-col gap-5 items-center text-center py-3 justify-center">
       <div>
-        {/* TODO: Logo */}
+        {/* <Logo /> */}
         <Link href="/">
-          <h1 className="font-bold text-2xl">Edward Qian</h1>
+          <h1 className="font-bold text-xl">Edward Qian</h1>
         </Link>
       </div>
       <div className="flex flex-col">
@@ -38,6 +37,13 @@ export default function Sidebar() {
             {text}
           </Link>
         ))}
+        <a
+          href="https://raw.githubusercontent.com/jedwed/resume/main/resume.pdf"
+          className="flex items-center my-1"
+        >
+          <MusicNoteIcon />
+          Résumé
+        </a>
       </div>
       <div className="flex gap-2">
         <a href="https://github.com/jedwed">
