@@ -1,19 +1,6 @@
-'use client';
-
 import Link from 'next/link';
-import { useTheme } from 'next-themes';
-// import musicNoteIcon from '../public/music-note.svg';
-// import githubIcon from '../public/github.svg';
-// import linkedinIcon from '../public/linkedin.svg';
-
-import {
-  GithubIcon,
-  LinkedInIcon,
-  MoonIcon,
-  MusicNoteIcon,
-  SunIcon,
-} from './icons';
-// import Logo from './logo';
+import ThemeToggle from './theme-toggle';
+import { GithubIcon, LinkedInIcon, MusicNoteIcon } from './icons';
 
 const navItems = [
   { path: '/projects', text: 'Projects' },
@@ -21,11 +8,9 @@ const navItems = [
 ];
 
 export default function Sidebar() {
-  const { theme, setTheme } = useTheme();
   return (
     <div className="h-full w-[15%] flex flex-col gap-5 items-center text-center py-3 justify-center">
       <div>
-        {/* <Logo /> */}
         <Link href="/">
           <h1 className="font-bold text-xl">Edward Qian</h1>
         </Link>
@@ -53,9 +38,7 @@ export default function Sidebar() {
           <LinkedInIcon />
         </a>
       </div>
-      <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-        {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
-      </button>
+      <ThemeToggle />
     </div>
   );
 }
