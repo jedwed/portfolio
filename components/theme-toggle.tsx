@@ -10,7 +10,7 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     setMounted(true);
-  });
+  }, []);
 
   // Avoid hydration mismatch by only rendering UI when page is mounted
   if (!mounted) {
