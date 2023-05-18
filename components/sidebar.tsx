@@ -32,7 +32,7 @@ export default function Sidebar() {
           </Link>
         ))}
         <a
-          href="/resume.pdf"
+          href="https://jedwed.github.io/resume/resume.pdf"
           target="_blank"
           className="flex items-center my-1"
         >
