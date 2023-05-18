@@ -22,7 +22,7 @@ export default function RootLayout({
           <div className="flex flex-col md:flex-row md:overflow-y-hidden">
             <Navbar />
             <div className="w-full flex justify-center h-screen md:overflow-y-auto">
-              <main className="my-auto text-center items-center max-w-xl">
+              <main className="my-auto p-8 text-center items-center max-w-xl">
                 {children}
               </main>
             </div>
