@@ -19,10 +19,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <div className="flex flex-col md:flex-row overflow-hidden">
+          <div className="flex flex-col md:flex-row md:overflow-y-hidden">
             <Navbar />
-            <div className="w-full flex justify-center h-screen overflow-auto">
-              <main className="my-auto py-8 text-center items-center max-w-xl">
+            <div className="w-full flex justify-center h-screen md:overflow-y-auto">
+              <main className="my-auto text-center items-center max-w-xl">
                 {children}
               </main>
             </div>

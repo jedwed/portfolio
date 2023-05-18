@@ -10,13 +10,13 @@ const navItems = [
 
 export default function Navbar() {
   return (
-    <div className="md:w-[15%] md:h-screen flex flex-row md:flex-col gap-5 items-center text-center py-3 justify-center">
+    <div className="md:overflow-y-auto w-full md:w-[15%] md:h-screen flex flex-row md:flex-col gap-5 items-center text-center py-3 justify-center">
       <div className="hidden md:block">
         <Link href="/">
           <h1 className="font-bold text-xl">Edward Qian</h1>
         </Link>
       </div>
-      <div className="flex gap-2">
+      <div className="hidden md:flex gap-2">
         <a href="https://github.com/jedwed" target="_blank">
           <GithubIcon />
         </a>
