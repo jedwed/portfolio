@@ -1,4 +1,4 @@
-import Sidebar from '@/components/sidebar';
+import Navbar from '@/components/navbar';
 import './globals.css';
 import { Inter } from 'next/font/google';
 import { Providers } from './providers';
@@ -19,10 +19,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <div className="flex h-screen w-screen">
-            <Sidebar />
-            <div className="w-full flex items-center justify-center">
-              <main className="m-12 text-center items-center max-w-xl">
+          <div className="flex flex-col md:flex-row overflow-hidden">
+            <Navbar />
+            <div className="w-full flex justify-center h-screen overflow-auto">
+              <main className="my-auto py-8 text-center items-center max-w-xl">
                 {children}
               </main>
             </div>

@@ -7,11 +7,10 @@ export default function Home() {
         </span>
         👋
       </h1>
-      {/* <h2 className="text-3xl font-bold my-4">Welcome to my website :D</h2> */}
       <p>
         My name is <b>Edward Qian</b>, and I&apos;m currently a university
         student studying and tutoring <b>Computer Science</b> at the{' '}
-        <a href="https://www.unsw.edu.au" className="underline">
+        <a href="https://www.unsw.edu.au" target="_blank" className="underline">
           <b>University of New South Wales</b>
         </a>
         .

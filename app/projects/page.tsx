@@ -1,3 +1,3 @@
 export default function Projects() {
-  return <div>TODO</div>;
+  return <section>TODO</section>;
 }
