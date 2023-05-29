@@ -22,9 +22,7 @@ export default function RootLayout({
           <div className="flex flex-col md:flex-row md:overflow-y-hidden transition duration-200 bg-white dark:bg-black">
             <Navbar />
             <div className="w-full flex justify-center h-screen md:overflow-y-auto">
-              <main className="my-auto p-8 text-center items-center max-w-xl">
-                {children}
-              </main>
+              <main className="my-auto p-8 max-w-xl">{children}</main>
             </div>
           </div>
         </Providers>

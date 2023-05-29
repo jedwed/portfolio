@@ -9,7 +9,7 @@ import { GithubIcon, LinkedInIcon, MusicNoteIcon } from './icons';
 const navItems = [
   { path: '/', text: 'Home' },
   { path: '/projects', text: 'Projects' },
-  { path: '/blog', text: 'Blog' },
+  { path: '/posts', text: 'Posts' },
 ];
 
 export default function Navbar() {

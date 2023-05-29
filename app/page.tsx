@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <section>
+    <section className="text-center">
       <h1 className="text-5xl font-bold mb-4">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-purple-400">
           Welcome
