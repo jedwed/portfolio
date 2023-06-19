@@ -1,12 +1,10 @@
+// import Typewriter from '@/components/typewriter';
+import Welcome from '@/components/welcome';
+
 export default function Home() {
   return (
     <section className="prose dark:prose-invert text-center">
-      <h1>
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-purple-400">
-          Welcome
-        </span>
-        👋
-      </h1>
+      <Welcome />
       <p>
         My name is <b>Edward Qian</b>, and I&apos;m currently a university
         student studying and tutoring <b>Computer Science</b> at the{' '}
