@@ -9,7 +9,7 @@ export default function Blog() {
 
   return (
     <section className="prose dark:prose-invert">
-      <h1 className="mb-4 text-center">Blog Posts (eek it's a WIP)</h1>
+      <h1 className="mb-4 text-center">Blog Posts (eek it&apos;s a WIP)</h1>
       {posts.map((post, idx) => (
         <PostCard key={idx} {...post} />
       ))}
