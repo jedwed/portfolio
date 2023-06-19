@@ -43,7 +43,7 @@ export default function Navbar() {
             key={index}
             href={path}
             className={clsx(
-              'flex items-center my-1 hover:text-purple-300',
+              'flex items-center m-1 hover:text-purple-300',
               path === pathname && 'text-purple-600'
             )}
           >
@@ -54,7 +54,7 @@ export default function Navbar() {
         <a
           href="https://jedwed.github.io/resume/resume.pdf"
           target="_blank"
-          className="flex items-center my-1 hover:text-purple-300"
+          className="flex items-center m-1 hover:text-purple-300"
         >
           <MusicNoteIcon />
           Résumé

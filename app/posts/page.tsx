@@ -1,22 +1,6 @@
-import Link from 'next/link';
-import { compareDesc, format, parseISO } from 'date-fns';
-import { allPosts, Post } from 'contentlayer/generated';
-import { useMDXComponent } from 'next-contentlayer/hooks';
-
-function PostCard(post: Post) {
-  const MDXContent = useMDXComponent(post.body.code);
-  return (
-    <div>
-      <h2>
-        <Link href={post.url}>{post.title}</Link>
-      </h2>
-      <time dateTime={post.date}>
-        {format(parseISO(post.date), 'LLLL d, yyyy')}
-      </time>
-      <MDXContent />
-    </div>
-  );
-}
+import { compareDesc } from 'date-fns';
+import { allPosts } from 'contentlayer/generated';
+import PostCard from '@/components/post-card';
 
 export default function Blog() {
   const posts = allPosts.sort((a, b) =>
@@ -25,7 +9,7 @@ export default function Blog() {
 
   return (
     <section>
-      <h1>Blog Posts</h1>
+      <h1 className="text-5xl font-bold mb-4 text-center">Blog Posts</h1>
       {posts.map((post, idx) => (
         <PostCard key={idx} {...post} />
       ))}

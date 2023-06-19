@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+[data-rehype-pretty-code-fragment] pre > code {
+  display: grid;
+  padding: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-rehype-pretty-code-fragment] pre[data-theme='light'],
+  [data-rehype-pretty-code-fragment] pre > code[data-theme='light'] {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+  [data-rehype-pretty-code-fragment] pre[data-theme='dark'],
+  [data-rehype-pretty-code-fragment] code[data-theme='dark'] {
+    display: none;
+  }
+}
