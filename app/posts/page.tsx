@@ -8,8 +8,8 @@ export default function Blog() {
   );
 
   return (
-    <section>
-      <h1 className="text-5xl font-bold mb-4 text-center">Blog Posts</h1>
+    <section className="prose dark:prose-invert">
+      <h1 className="mb-4 text-center">Blog Posts</h1>
       {posts.map((post, idx) => (
         <PostCard key={idx} {...post} />
       ))}
