@@ -8,10 +8,13 @@ export default function Welcome() {
         onInit={(typewriter) =>
           typewriter
             .typeString('Welcome!')
-            .pauseFor(100)
-            .pasteString('<span style="color: initial">👋</span>', null)
+            .pasteString(
+              '<span class="wave" style="color: initial">👋</span>',
+              null
+            )
             .start()
         }
+        options={{ cursor: '' }}
       />
     </h1>
   );
