@@ -25,7 +25,7 @@ const projects: IProject[] = [
   },
   {
     name: 'Online Debugger',
-    description: 'An online tool to debug your C code',
+    description: 'An online tool to debug your C code.',
     image: onlineDebugger,
     github: 'https://github.com/jedwed/online-debugger',
     link: 'https://online-debugger.onrender.com',

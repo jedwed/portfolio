@@ -14,7 +14,7 @@ export default function ProjectCard(project: IProject) {
             <Technology technology={technology} key={idx} />
           ))}
         </div>
-        <div className="flex items-center m-2 gap-2">
+        <div className="flex items-center gap-2">
           <a href={project.github} target="_blank">
             <GithubIcon />
           </a>
