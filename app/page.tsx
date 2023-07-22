@@ -1,4 +1,3 @@
-// import Typewriter from '@/components/typewriter';
 import PageWrapper from '@/components/page-wrapper';
 import Welcome from '@/components/welcome';
 

@@ -15,9 +15,7 @@ export default function PageWrapper({
         transition={{ duration: 0.5 }}
         className="w-full flex justify-center h-screen md:overflow-y-auto"
       >
-        <main className="my-auto p-8 max-w-xl prose dark:prose-invert">
-          {children}
-        </main>
+        <main className="my-auto p-8 prose dark:prose-invert">{children}</main>
       </motion.div>
     </AnimatePresence>
   );
